@@ -17,10 +17,10 @@ let when = [
 ];
 
 function sujeto() {
-  let randomsujeto = Math.floor(Math.random() * 3);
+  let randomsujeto = Math.floor(Math.random() * 4);
   return randomsujeto;
 }
 
 window.onload = function() {
-  console.log(sujeto());
+  console.log(who[sujeto()]);
 };
