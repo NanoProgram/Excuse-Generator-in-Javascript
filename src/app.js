@@ -27,15 +27,18 @@ function accion() {
 }
 
 function que() {
-  let randomque = Math.floor(Math.random() * 4);
+  let randomque = Math.floor(Math.random() * 3);
   return randomque;
 }
 
 function cuando() {
-  let randomcuando = Math.floor(Math.random() * 4);
+  let randomcuando = Math.floor(Math.random() * 5);
   return randomcuando;
 }
 
-window.onload = function() {
+/*window.onload = function() {
   console.log(who[sujeto()] + action[accion()] + what[que()] + when[cuando()]);
-};
+};*/
+
+document.getElementById("change").innerHTML =
+  who[sujeto()] + action[accion()] + what[que()] + when[cuando()];
