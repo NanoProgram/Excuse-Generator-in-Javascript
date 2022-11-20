@@ -7,13 +7,13 @@ import "./assets/img/4geeks.ico";
 
 let who = ["The dog", "My grandma", "His turtle", "My bird"];
 let action = [" ate", " peed", " crushed", " broke"];
-let what = ["my homework", "the keys", "the car"];
+let what = [" my homework", " the keys", " the car"];
 let when = [
-  "before the class",
-  "right on time",
-  "when I finished",
-  "during my lunch",
-  "while I was praying"
+  " before the class",
+  " right on time",
+  " when I finished",
+  " during my lunch",
+  " while I was praying"
 ];
 
 function sujeto() {
@@ -37,5 +37,5 @@ function cuando() {
 }
 
 window.onload = function() {
-  console.log(who[sujeto()] + action[accion()]);
+  console.log(who[sujeto()] + action[accion()] + what[que()] + when[cuando()]);
 };
