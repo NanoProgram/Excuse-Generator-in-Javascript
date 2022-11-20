@@ -6,7 +6,7 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 let who = ["The dog", "My grandma", "His turtle", "My bird"];
-let action = ["ate", "peed", "crushed", "broke"];
+let action = [" ate", " peed", " crushed", " broke"];
 let what = ["my homework", "the keys", "the car"];
 let when = [
   "before the class",
@@ -21,6 +21,21 @@ function sujeto() {
   return randomsujeto;
 }
 
+function accion() {
+  let randomaccion = Math.floor(Math.random() * 4);
+  return randomaccion;
+}
+
+function que() {
+  let randomque = Math.floor(Math.random() * 4);
+  return randomque;
+}
+
+function cuando() {
+  let randomcuando = Math.floor(Math.random() * 4);
+  return randomcuando;
+}
+
 window.onload = function() {
-  console.log(who[sujeto()]);
+  console.log(who[sujeto()] + action[accion()]);
 };
